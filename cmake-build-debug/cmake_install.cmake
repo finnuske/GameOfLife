@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/Finn/Documents/C++/projects/game_of_life
+# Install script for directory: E:/Dokumente/Programmieren/C++/GameOfLife
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/Finn/Documents/C++/projects/game_of_life/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/Dokumente/Programmieren/C++/GameOfLife/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

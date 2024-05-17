@@ -7,7 +7,7 @@
 using namespace std;
 
 // CHOOSE DESIGN OF A LIVING CELL HERE
-char cell = '0';
+char cell = 'X';
 
 // width of grid
 const int WIDTH = 20;
@@ -48,29 +48,29 @@ void initialize(vector<vector<int>>& grid) {
     // SET STARTER CELLS HERE
 
     // example pattern: blinker (oscillates between horizontal and vertical)
-    grid[2][2] = 1;
-    grid[2][3] = 1;
-    grid[2][4] = 1;
+//    grid[2][2] = 1;
+//    grid[2][3] = 1;
+//    grid[2][4] = 1;
 
     // example pattern: tetris rectangle (repeating between plus and circle)
-    grid[5][5] = 1;
-    grid[5][6] = 1;
-    grid[5][7] = 1;
+    grid[4][4] = 1;
+    grid[4][5] = 1;
     grid[4][6] = 1;
+    grid[3][5] = 1;
 
     // example pattern: glider (travels across screen)
-    grid[5][5] = 1;
-    grid[5][6] = 1;
-    grid[5][7] = 1;
-    grid[4][7] = 1;
-    grid[3][6] = 1;
+//    grid[5][5] = 1;
+//    grid[5][6] = 1;
+//    grid[5][7] = 1;
+//    grid[4][7] = 1;
+//    grid[3][6] = 1;
 
     // random pattern
-    grid[8][5] = 1;
-    grid[1][3] = 1;
-    grid[5][7] = 1;
-    grid[3][6] = 1;
-    grid[7][7] = 1;
+//    grid[8][5] = 1;
+//    grid[1][3] = 1;
+//    grid[5][7] = 1;
+//    grid[3][6] = 1;
+//    grid[7][7] = 1;
 }
 
 void printGrid(const vector<vector<int>>& grid) {
@@ -88,7 +88,7 @@ int countNeighbors(const vector<vector<int>>& grid, int x, int y) {
 
     for (int i = -1; i <= 1; ++i) {
         for (int j = -1; j <= 1; ++j) {
-            // its own position
+            // skip loop at its own position
             if (i == 0 && j == 0) continue;
 
             int nx = x + i;

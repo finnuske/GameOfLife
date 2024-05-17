@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Finn/Documents/C++/projects/game_of_life/cmake-build-debug",
-		"source" : "C:/Users/Finn/Documents/C++/projects/game_of_life"
+		"build" : "E:/Dokumente/Programmieren/C++/GameOfLife/cmake-build-debug",
+		"source" : "E:/Dokumente/Programmieren/C++/GameOfLife"
 	},
 	"version" : 
 	{
